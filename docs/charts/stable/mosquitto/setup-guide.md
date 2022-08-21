@@ -17,6 +17,7 @@ Open the Mosquitto container shell and execute the following commands, _one by o
 
 ```sh
 cd /mosquitto/configinc
+touch passwordfile
 mosquitto_passwd -c passwordfile username
 echo "password_file /mosquitto/configinc/passwordfile" > passwordconfig.conf
 ```
